@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transportasi - Metode North West Corner</title>
+	<script type="text/javascript" src="proses_nwc.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mui.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/mui.js"></script>
+	<script src="js/mui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mui.min.css">
+	<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+
+	<style type="text/css">
+		input[type=number]::-webkit-inner-spin-button, 
+		input[type=number]::-webkit-outer-spin-button { 
+		  -webkit-appearance: none; 
+		}
+		*{
+			transition: 0.5s;
+		}
+		th{
+			color: #c51162;
+		}
+	</style>
+</head>
+<body class="mui-container-fluid" style="width: 100%;">
+	<center>
+		<div class="mui-appbar" style="width: 100%; background-color: #f50057">
+			<h2 align="left" style="padding-left: 20px; padding-top: 20px;">Transportasi - Metode North West Corner (NWC)</h2>
+			<h4 align="left" style="padding-left: 20px; padding-top: 5px;">15523072 - Rifqi Afif , 15523090 - Bayu Aprilananda S.</h4>
+		</div>
+		</div>
+			
+			<form class="mui-form" onsubmit="proses_nwc(); return false;" style="width:100%; background-color: #f9eaef ; vertical-align:middle; padding-left: 25px; padding-right: 25px; padding-bottom: 15px;" name="cekForm">
+				<table>
+					<legend style="color: #c51162;">Input Data</legend>
+					<tr>
+						<th>
+							Penawaran Pabrik
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label">
+								<input type="number" name="penawaran1" id="penawaran1" required>
+								<label>Penawaran 1</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label">
+								<input type="number" name="penawaran2" id="penawaran2" required>
+								<label>Penawaran 2</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label">
+								<input type="number" name="penawaran3" id="penawaran3" required>
+								<label>Penawaran 3</label>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<th>
+							Permintaan Gudang
+						</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label">
+								<input type="number" name="permintaan1" id="permintaan1" required>
+								<label>Permintaan 1</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label">
+								<input type="number" name="permintaan2" id="permintaan2" required>
+								<label>Permintaan 2</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label">
+								<input type="number" name="permintaan3" id="permintaan3" required>
+								<label>Permintaan 3</label>
+							</div>
+						</td>
+					</tr>
+
+				</table>
+
+				<table class="mui-table mui-table--bordered">
+					<legend style="color: #c51162;">Masukkan Biaya</legend>
+					<tr>
+						<th></th>
+						<th>Gudang 1</th>	
+						<th>Gudang 2</th>	
+						<th>Gudang 3</th>	
+					</tr>
+					
+					<tr>
+						<th>Pabrik 1</th>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+							<input type="number" name="c11" id="c11" required>
+							<label>C11</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+								<input type="number" name="c12" id="c12" required>
+								<label>C12</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+								<input type="number" name="c13" id="c13" required>
+								<label>C13</label>
+							</div>
+						</td>
+						
+					</tr>
+
+					<tr>
+						<th>Pabrik 2</th>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+							<input type="number" name="c21" id="c21" required>
+							<label>C21</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+								<input type="number" name="c22" id="c22" required>
+								<label>C22</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+								<input type="number" name="c23" id="c23" required>
+								<label>C23</label>
+							</div>
+						</td>
+						
+					</tr>
+
+					<tr>
+						<th>Pabrik 3</th>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+							<input type="number" name="c31" id="c31" required>
+							<label>C31</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+								<input type="number" name="c32" id="c32" required>
+								<label>C32</label>
+							</div>
+						</td>
+						<td>
+							<div class="mui-textfield mui-textfield--float-label" >	
+								<input type="number" name="c33" id="c33" required>
+								<label>C33</label>
+							</div>
+						</td>
+					</tr>
+					
+				</table>
+					
+				<center>
+				<button class="btn btn-success" type="submit" onclick="proses_nwc();" style="width: 150px; cursor: pointer">Submit</button>
+				<input class="btn btn-danger" type="reset" name="reset" value="Cancel" style="width: 150px;cursor: pointer">
+				</center>
+			</form><br>
+			<div style="width: 100%; background-color: #f50057;color:white;">
+				<h3 align="left" style=" padding: 10px;margin-top: 5px;">Hasil Perhitungan Metode NWC : <span id= "hasil"></span></h3>
+			</div>
+			<div style="background-color: #f9eaef;padding: 10px; color: #c51162;">
+				<h3 align="left" >Kesimpulan : </h3>
+				<b><p align="left" style=""><span id="kesimpulan"></span><span id="biaya"></span></p></b>
+			</div>
+			<div style="background-color: #f9eaef;padding: 10px; color: #c51162;">
+				<h3 align="left" >Tabel NWC  : </h3>
+				<b><p align="left" style="">
+				<div class="table-responsive">
+					<span id="table"></span>
+				</div>
+			</div>
+	</center>
+</body>
+</html>
